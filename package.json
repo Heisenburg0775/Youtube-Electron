@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "ytdl-core": "^4.11.4",
+    "ytsr": "^3.8.2"
+  },
+  "name": "youtube-electron",
+  "version": "1.0.0",
+  "main": "./bin/Core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Heisenberg",
+  "license": "ISC",
+  "description": "An simple app",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "electron": "24.3.0"
+  }
+}

@@ -1,0 +1,171 @@
+@import url("catppuccin.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--ctp-mocha-base);
+}
+
+.navigation{
+    height: 8%;
+    width: 100%;
+    background-color: var(--ctp-mocha-surface0);
+}
+
+.search-panel{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    border: none;
+    height: 25px;
+    width: 50px;
+    outline:none;
+    cursor: pointer;
+    background-color: var(--ctp-mocha-green);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px
+}
+
+.search-input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    outline:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--ctp-mocha-overlay0);
+    padding-left: 10px;
+    color: var(--ctp-mocha-rosewater)
+
+}
+.label{
+    font-size: 25px;
+    background: linear-gradient(75deg,var(--ctp-mocha-teal),var(--ctp-mocha-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.player-wrapper{
+    width: 100%;
+    height: 92%;
+}
+
+.player{
+    width: 100%;
+    height: 100%;
+    outline:none;
+}
+
+.np{
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    color: white;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.details{
+    font-size: 15px;
+    margin-top: 15px;
+    display: none;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70%;
+    height:70%;
+    z-index:0;
+    transition: 1s;
+}
+.main-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.main-wrapper h1{
+    margin-left: 30px;
+    margin-top:30px;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+}
+.tcss{
+    color: var(--ctp-mocha-red);
+}
+
+.background{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.maintitle, .mainuploader, .mainviews, .mainid ,.maindate ,.mainsubs{
+    color:var(--ctp-mocha-blue)
+}
+.channel{
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--ctp-mocha-red);
+    cursor: pointer;
+}
+
+.video_{
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;;
+    border-radius: 5px;
+    background-color: var(--ctp-mocha-blue);
+    cursor: pointer;
+}
+.internet{
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    background-color: var(--ctp-mocha-red);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+

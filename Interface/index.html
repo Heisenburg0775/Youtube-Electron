@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h2 class="label">YT.ElectronJS</h2>
+        <div class="search-panel">
+          <input type="text" class="search-input" />
+          <button class="btn" onclick="Main()">🔍</button>
+        </div>
+      </div>
+      <div class="player-wrapper">
+        <h2 class="internet" id="internet">No Internet</h2>
+        <h2 class="np" onclick="Show()">None</h2>
+        <video class="player" controls autoplay></video>
+        <div class="details" id="details">
+          <div class="main-wrapper">
+            <h1 class="Title"><span class="tcss">Title: </span><span class="maintitle">None</span></h1>
+            <h1 class="Uploader"><span class="tcss">Uploader: </span><span class="mainuploader">None</span></h1>
+            <h1 class="Views"><span class="tcss">Views: </span><span class="mainviews">None</span></h1>
+            <h1 class="Id"><span class="tcss">Video Id: </span><span class="mainid">None</span></h1>
+            <h1 class="Date"><span class="tcss">Uploaded At: </span><span class="maindate">None</span></h1>
+            <h1 class="Subscribers "><span class="tcss">Subscribers: </span><span class="mainsubs">None</span></h1>
+            <button class="channel" id="channel">View Channel</button>
+            <button class="video_" id="video_">View Video</button>
+          </div>
+          <div class="background"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./libs/ytdl.js"></script>
+    <script src="./libs/ytsr.js"></script>
+    <script src="../bin/Script.js" type="text/javascript"></script>
+  </body>
+  <link rel="stylesheet" href="./styles/index.css" />
+</html>
